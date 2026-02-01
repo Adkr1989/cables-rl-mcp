@@ -1,0 +1,61 @@
+{
+  "name": "cables-rl-mcp",
+  "version": "1.0.0",
+  "description": "MCP server integrating Cables.gl with Reinforcement Learning for autonomous visual parameter optimization and generative art exploration",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "cables-rl-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc -w",
+    "test": "node --test",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "cables.gl",
+    "cables",
+    "reinforcement-learning",
+    "generative-art",
+    "visual-optimization",
+    "shader",
+    "webgl",
+    "ai-art",
+    "autonomous-art",
+    "claude",
+    "anthropic"
+  ],
+  "author": "A_Development <aribtc123@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adkr1989/cables-rl-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adkr1989/cables-rl-mcp/issues"
+  },
+  "homepage": "https://github.com/adkr1989/cables-rl-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "sharp": "^0.33.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/uuid": "^9.0.7",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "python",
+    "README.md",
+    "LICENSE"
+  ]
+}
